@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "5366fa4a-d61d-42e4-bdf5-a132c9dfe704",
+		"name": "Cars Name",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23469129"
+	},
+	"item": [
+		{
+			"name": "localhost:7071/cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7071/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7071/cars/make/Toyota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7071/cars/make/Toyota",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars",
+						"make",
+						"Toyota"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7071/cars/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7071/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7071/cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"make\": \"Dodge\",\r\n    \"model\": \"Viper\",\r\n    \"price\": 35000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7071/cars/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:7071/cars/2",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:7071/cars/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"make\": \"Mercedes\",\r\n    \"model\": \"S-class\",\r\n    \"price\": 40000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7071/cars/2",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
